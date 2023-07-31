@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+    
+/*
+ button>a
+{
+    background-color: white;
+     color: var(--corscania);
+    font-weight: bold;
+}
+body > button:hover {
+    background-color: var(--corscania);
+    color: white;
+    padding: 5px ;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+*/
+:root{
+    --corscania:#041e42;}
+
+#principal:hover{
+   background-color: #041e42;
+  
+}
+     
+button >a{
+color: white;
+}
+
+
+.tableBtn{
+     background-color: #e8e8e8;
+     color: #041e42;
+     transition-duration: 0.5s;    
+}
+
+
+

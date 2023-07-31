@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br"><!--Imagens flexiveis-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>
+        Imagem Flexível</h1>
+    <p>
+        Você está vendo a imagem completa? Experimente ampliar o tamanho para aproveitar a melhor experiência.  &#X1F60D;</p><!--emoji-->
+    
+<picture>
+   <source media="(max-width:750px)" srcset="imagem/imagem-p.png" type="image/png"> <!--a mesma coisa do medio-->
+
+<source media="(max-width: 1050px )" srcset="imagem/imagem-m.png" type="image/png"> <!-- para criar medio: criar source:media:type) // media: dentro de min colocar maxmaximo //width: colocar pixels px // srcset: descrever caminho ate a imagem // type: colocar png )-->
+
+<img src="imagem/imagem-g.png" alt="imagem flexivel"> <!--inicia pelo maior ( colocar img )-->
+   
+<!-- Para tirar barra de rolagem só aumentar PX dentro de Width-->
+
+</picture>
+</body>
+</html>

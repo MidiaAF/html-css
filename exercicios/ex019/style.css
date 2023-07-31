@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* 
+em HTML é id = em CSS é # 
+em HTML é class = em CSS é . 
+ */
+
+body
+{
+   background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color:rgb(177, 11, 38); ;
+}
+h1#principal{
+    text-align: center;
+    background-color: rgb(212, 99, 193);
+    color: white;
+}
+h2{
+    color: rgb(179, 56, 76);
+
+} /* class */
+.basico{
+color: #3c805e;
+}
+
+.intermediario{
+    color: #776b01;
+}
+
+.avancado{
+    color: #803c3c;
+}
+
+.destaque{
+    background-color:rgb(210, 87, 214) ;
+}
+/* no meio do texto colocar CRTL+Shift+p tag <span >class= descrever o class >*/

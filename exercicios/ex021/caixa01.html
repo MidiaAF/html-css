@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo ce Caixas</title>
+    <style>
+        h1{ /* BOX-LEVEL*/
+            /*SE QUISER TRANSFORMAR EM inline   
+            display:inline;*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+
+            border-width: 10px; /*Bordas: Criando caixas*/
+            border-style: solid;
+            border-color: darkgray;
+            /*border: 10px solid darkgray == substitui as 4 linhas acima acima*/
+
+
+            padding-top: 10px; /* espaço entre letra e borda para dentro*/
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*padding: 10px 10px 10px 10px ou apenas 10px == substitui as 4 linhas acima acima*/
+
+            margin-top: 10px;/*Criando espaço na imagem do lado de fora */
+            margin-right: 10px;
+            margin-bottom:30px ;
+            margin-left: 40px;
+            /*margin:auto == centraliza a margem*/
+            /* ou margin:20px auto 40px auto */ 
+            /*margin: 10px 10px 10px 10px == substitui as 4 linhas acima */
+
+            outline-width: 5px; /* borda ao lado de fora da borda*/
+            outline-style: dashed;
+            outline-color: salmon;
+            /*5px dashed salmon* substitui as 3 linhas acima*/
+        }
+
+        a{ /* INLINE-LEVEL*/
+            /*SE QUISER TRANSFORMAR EM display:block;*/
+            border-width: 5px;
+            border-style:solid;/* Tipo de Bordas :  dashed(borda pontilhada) // dotted( borda pontilhada) // double (linha dupla) .. etc */
+            border-color: red;
+            padding-top: 10px; /* espaço entre letra e borda*/
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+}
+    </style>
+</head>
+<body>
+   <h1>Exemplo de caixa box-level</h1> 
+   
+       <p>Parágrafos também são exemplos de box-level, mas os<a href="#"> links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona </p>
+   
+</body>
+</html>
