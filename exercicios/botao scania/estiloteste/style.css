@@ -1,0 +1,50 @@
+@charset "UTF-8"
+/* 1 primeiro botão*/
+    
+.tableBtn{border: #e8e8e8 1px solid !important;
+    width: 150px;}
+  
+
+.tableBtn:hover{
+background-color:red !important;
+color: #e8e8e8;
+cursor: pointer;
+color:white;
+fill:white;
+}
+
+/* 2 botão */
+#edit_icon:hover{
+    fill:white;
+}
+
+.button>a{
+
+    background-color: #041e42;
+    cursor:pointer
+}
+    
+
+.button{
+background-color: white;
+border-radius: 5px;
+color: blue;
+font-size: 18px;
+font-weight: bolder;
+border: 1px solid #041e42;
+transition: 0.5s;
+}
+
+
+svg:hover{
+    background-color: #041e42;
+    cursor: pointer;
+    border: 1px solid #041e42;
+}
+
+svg:hover path{
+    fill: #e8e8e8;
+    
+    
+}
+
