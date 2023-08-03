@@ -1,0 +1,29 @@
+@charset "UTF-8"
+    
+.tableBtn{border: #e8e8e8 1px solid !important;
+    width: 150px;}
+  
+
+.tableBtn:hover{
+background-color:rgb(255, 0, 0) !important;
+cursor: pointer;
+}
+
+
+button{
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    color: #041e42;
+    font-size: 18px;
+    font-weight: bolder;
+    border: 1px solid #041e42;
+    transition: 0.5s;
+}
+
+.element:hover{
+    background-image: url(edit_icon-_2_png.svg);
+}
+
+
+
+

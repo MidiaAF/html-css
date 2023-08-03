@@ -13,7 +13,7 @@ color:white;
 fill:white;
 }
 
-/* 2 botão */
+/*
 #edit_icon:hover{
     fill:white;
 }
@@ -33,7 +33,7 @@ font-size: 18px;
 font-weight: bolder;
 border: 1px solid #041e42;
 transition: 0.5s;
-}
+}*/
 
 
 svg:hover{
@@ -45,6 +45,5 @@ svg:hover{
 svg:hover path{
     fill: #e8e8e8;
     
-    
-}
+    }
 
