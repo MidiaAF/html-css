@@ -1,14 +1,27 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Tangerine:wght@400;700&display=swap');
+
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', 'cursive';
+    --fonte3:'Sriracha', 'cursive';
+
+}
 
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+    
 }
 
 html,body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 
 }
 header{
@@ -26,6 +39,9 @@ header > h1{
     /*
     text-transform: uppercase;colocar todas as letras em Maíscula
     */
+    font-family:var(--fonte2);
+    /*font-size: 4em;tamanho da letra*/
+    font-size: 10vw;/*a letra aumenta e diminui de acordo com o tamanho da tela*/
 
 }
 
@@ -50,6 +66,9 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;/*espaço entre as letras*/
     padding-left: 30px;
+    font-family: var(--fonte3);
+    /*font-size: 2em;aumentar tamanho da letra*/
+    font-size: 4vw;
 
 }
 
@@ -60,14 +79,15 @@ section.normal{
 }
 
 section.imagem{
-    background-color: rgba(35, 35, 35, 0.923);
+    background-color: rgba(35, 35, 35, 0.814);
    color: white;    
 
 }
 
 section.imagem>p{
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.055);
+    display: inline-block;/*a caixa se adequa ao conteúdo*/
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.176);
 
 }
 
