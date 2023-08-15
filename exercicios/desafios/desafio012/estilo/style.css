@@ -33,7 +33,7 @@ header{
 }
 
 header > h1{
-    padding: 50px;/* expoço entre letras*/
+    padding: 50px;/* espaço entre letras*/
     font-variant: small-caps;/*1ª letra maiores mas todas são maiusculas*/
 
     /*
@@ -61,6 +61,7 @@ header a:hover, footer a:hover{
     text-decoration: underline;/*passar mouse em cima vira sublinhado*/
 
 }
+
 section{
     padding-top: 10vh;/*espaço entre as frases*/
     padding-bottom: 10vh;
@@ -80,14 +81,40 @@ section.normal{
 
 section.imagem{
     background-color: rgba(35, 35, 35, 0.814);
-   color: white;    
+   color: white; 
+   box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.559);/*sombra pra dentro*/
+   background-size: cover;/*diminui o tamanho da imagem*/
+   background-attachment: fixed;/*fixar imagem fundo*/
+
 
 }
 
-section.imagem>p{
+section.imagem > p{
     display: inline-block;/*a caixa se adequa ao conteúdo*/
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.176);
+    background-color: rgba(0, 0, 0, 0.418);
+    text-shadow: 2px 2px 0px black;/*sombra*/
+    
+
+}
+
+section >p{
+    padding-bottom: 2em;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+
+
+
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    
 
 }
 
