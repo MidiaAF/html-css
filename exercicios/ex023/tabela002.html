@@ -5,26 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;            
         }
 
+            /*Pseudo class :nth-child(2n) de 2 em 2 coloca cor diferente ( EFEITO ZEBRADO)/////  PODE COLOCAR nth-child(odd) odd=impar ou even=par ou 2n= dois em dois */
+        tbody tr:nth-child(odd){
+            background-color: lightgray;
+
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgb(204, 228, 228);
+
+        }
+
+        tbody>tr:nth-child(even){
+            background-color: lightgrey;
+        }
+
         table{
+            
             width: 500px;
             border-collapse: collapse;
-
         }
 
         td,th{
+            
             border: 1px solid black;
             padding: 10px;
+                        
         }
+
+        .estado{
+            text
+        }
+
+        
         thead{
-            background-color: gray;
+            background-color: black;
             color: white;
         }
+
         tfoot{
 
+        }
+
+        td.num{
+            text-align: right;
         }
 
     </style>
@@ -34,6 +71,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES 
         TABLE
+        CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -42,35 +80,161 @@
                 TR, TD, TH
     -->
     <TABle>
+        <caption>População das Unidades Federativas </caption>
         <THead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
+            <tr><!--Scope col os estado mencionados  são dados da coluna "ESTADO" titulo de coluna -->
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <th>% por população</th>
             </tr>
         </THead>
 
         <TBOdy>
             <tr>
-                <td>São Paulo</td>
-                <td>44 420 459	</td>
+                <td class="estado">São Paulo</td>
+
+                <td class="num">44. 420. 459	</td>
+                <td>21,88%	</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>20 538 718	</td>
+                <td class="num">20. 538 .718	</td>
+                <td>10,11%	</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>16 054 524	</td>
+                <td class="num">16. 054. 524	</td>
+                <td>7,91%	</td>
             </tr>
-        </TBOdy>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14. 136.417		</td>
+                <td>6,96%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11. 443. 208	</td>
+                <td>5,64%	</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10. 880. 506		</td>
+                <td>5,36%	</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">9. 058 .155	</td>
+                <td>4,46%		</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 .791. 688		</td>
+                <td>4,33%			</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 .116 .132</td>
+                <td>4,1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7. 609 .601	</td>
+                <td>3,75%	</td>
+            </tr>
+            <tr>
+                <td>Goáis</td>
+                <td class="num">7 .055. 228		</td>
+                <td>3,47%		</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 .775. 152</td>
+                <td>3,34%</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3. 974. 495	</td>
+                <td>1,96%	</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3. 941 .175		</td>
+                <td>1,94%		</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3. 833 .486</td>
+                <td>1,89%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 .658. 813		</td>
+                <td>1,8%		</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3. 302. 406		</td>
+                <td>1,63%		</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 .269. 200		</td>
+                <td>1,61%		</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3. 127. 511		</td>
+                <td>1,54%		</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2. 817. 068		</td>
+                <td>1,39%		</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2. 756. 700		</td>
+                <td>1,36%		</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2. 209. 558		</td>
+                <td>1,09%		</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 .581. 016		</td>
+                <td>0,78%		</td>
+            </tr>
+            <td>Tocantins</td>
+                <td class="num">1 .511.459</td>
+                <td>0,74%	</td>
+            </tr>
+        </tr>
+        <td>Acre</td>
+            <td class="num">830.026</td>
+            <td>0,41%</td>
+        </tr>
+        </tr>
+        <td>Amapá</td>
+        <td class="num">733.508</td>
+        <td>0,36%</td>
+        </tr>
+        </tr>
+        <td>Roraima</td>
+        <td class="num">636.303</td>
+        <td>0,31%</td>
+        </tr>        
+       
 
         <TFoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <td>0000</td>
+            <tr><!--Scope Row titulo da linha -->
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
             </tr>
 
         </TFoot>
-    </TABle>
+    </TABle> 
+</TBOdy>
 </body>
 </html>
