@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabela Média</title>
+<style>
+
+
+        th{
+            background-color: gray;
+            color: white;                        
+         
+
+    }
+
+    table{
+        border-collapse: collapse;
+        
+    }
+
+    th, td{
+        padding: 10px;
+        border: 1px solid black;
+
+    }
+
+    </style>
+    
+</head>
+<body>
+    <table>
+
+        <caption>Cadastro</caption>
+
+        <thead>
+            <th scope="col">Área</th>
+            <th scope="col">Disciplina</th>
+            <th colspan="2" scope="colgroup">Notas</th>         
+            <th scope="col">Média</th>
+
+        </thead>
+
+        <tbody>
+            <td rowspan="4">Exatas</td>
+            <td>Matemática</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+
+            <tr>
+                <td>Fisíca</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>Química</td>
+                <td>9</td>
+                <td>9</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td>9</td>
+                <td>9</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <th colspan="4">Média de Exatas</th>
+                <td>09</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Humanas</td>
+                <td>História</td>
+                <td>05</td>
+                <td>05</td>
+                <td>05</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <th colspan="4">Média de Humanas</th>
+                <td>00</td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
