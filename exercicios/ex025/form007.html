@@ -7,7 +7,53 @@
 </head>
 <body>
     <h1>Exemplo de formulario</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest"><!--apenas opções não deixa digitar-->
+
+                <option value="select">--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+
+
+            </select>
+        </p>
+
+
+
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+
+
+        <p>
+            <label for="iprof">Professor</label><!--deixa você digitar e colocar opções-->
+            <input type="text" name="prof" id="iprof" list="lstprof">
+
+            <datalist id="lstprof">
+                
+                <option >Administrador</option>
+                <option >Professor</option>
+                <option >Contador</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+            
+
+        </p>
 
         <p>
             <input type="submit" value="Enviar">
