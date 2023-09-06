@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
 
+
     <link rel="stylesheet" href="estilos/style.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /><!-- site Google icons/ escolhe icone = copia Static icon font MENU (hamburguinho) é css do google-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /><!-- site Google icons/ escolhe icone = copia Static icon font MENU (hamburguinho) é css do google-->
+
+    <link rel="stylesheet" href="estilos/media-query.css">
 
 </head>
-<body>
+<body onresize="mudouTamanho()"><!--quando mudar tamanho não desaparecer o Menu em telas grandes-->
+
     <header>   
 
     <h1>Meu Site</h1>
-    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> <!--site Google icons/ Inserting the icon MENU (hamburguinho)-->
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> <!--site Google icons/ Inserting the icon MENU (hamburguinho) javacript-->
         menu
         </span>
     

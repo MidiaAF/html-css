@@ -31,7 +31,7 @@ header{
     width: 100vw;
     text-align: center;
     padding: 10px;
-    cursor: pointer;
+    cursor: pointer;/*virar mãozinha e tirar a seta quando passar o mouse */
 }
 
 span#burguer:hover{
