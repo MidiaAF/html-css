@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="estilos/media-query.css">
 
 </head>
-<body onresize="mudouTamanho()"><!--quando mudar tamanho não desaparecer o Menu em telas grandes-->
+<body onresize="mudouTamanho()"><!--quando mudar tamanho do site, não desaparecer o Menu em telas grandes-->
 
     <header>   
 
@@ -49,9 +49,22 @@
 
 </article>
     </main>
+
+
     <script>/*para clicar aparecer e clicar sair menu*/
+
+        function mudouTamanho(){/*para a tela forçar as opções aparecer em tela grande*/
+            if(window.innerWidth >=768){
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+
+        }
+
+
         function clickMenu(){
-            /*itens.style.display = 'block'*/
+            /*o menu aparece na tela*/
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
             }  else { 

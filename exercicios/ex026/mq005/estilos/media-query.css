@@ -11,7 +11,9 @@ Telas Grandes: acima de 1200px
 */
 
 
-@media screen and (min-width: 768px) { /*telas maiores 768px  sem menu hamburguinho*/
+/*telas maiores 768px  sem menu hamburguinho*/
+
+@media screen and (min-width: 768px) { 
    span#burguer{ /*tirar o icone menu*/
         display: none;
     }
@@ -22,7 +24,11 @@ Telas Grandes: acima de 1200px
 
     menu > ul > li {
         display: inline-block;/*tirou as "opções" de baixo um do outro para lado a lado*/
-        
+
+    }
+
+    main{
+        width:768px;
     }
 
 
