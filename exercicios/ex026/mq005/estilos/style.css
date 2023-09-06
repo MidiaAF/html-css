@@ -1,1 +1,97 @@
 @charset " UTF-8";
+
+
+/* Versão para Mobile First ( para Celular)*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px; /*colocar o menu e o ul grudado no top e lefth */
+    padding: 0px;
+}
+
+
+body, html{
+    background-color: lightgrey;/* para menu e ul ficar na mesma caixa*/
+}
+
+header{
+    background-color: gray;
+}
+
+
+ header > h1 {   
+    text-align: center; 
+    padding: 10px;   
+}
+
+#burguer{
+    background-color: rgb(50, 50, 50);
+    color: white;
+    width: 100vw;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burguer:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+
+menu{
+    display: none;/*para o menu Opções sumir da tela*/
+
+}
+
+   
+menu > ul{
+    list-style-type:none;/*tirar bolinhas do UL-LI*/
+    
+}
+
+menu > ul > li > a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(103, 101, 101);
+    color: white;
+    border-top: 1px solid rgba(128, 128, 128, 0.712);/*colocar borda entre as ul*/
+    font-size: 1.3em;    
+    transition-duration: 0.5s;   
+}
+
+menu > ul > li > a:hover{
+    background-color: lightgrey;
+}
+
+
+main{
+    background-color: white;
+    width:90vw;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+
+}
+
+main > article > h2{
+    padding-bottom:10px;
+    background-color: white;
+    background-position: center;
+}
+
+article{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;/*espaçar letras no inicio do paragrafo*/
+}
+
+
+
+
