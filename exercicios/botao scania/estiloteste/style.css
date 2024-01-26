@@ -1,7 +1,8 @@
 @charset "UTF-8"
 /* 1 primeiro botão*/
     
-.tableBtn{border: #e8e8e8 1px solid !important;
+.tableBtn{
+    border: #e8e8e8 1px solid !important;
     width: 150px;}
   
 
@@ -40,10 +41,12 @@ svg:hover{
     background-color: #041e42;
     cursor: pointer;
     border: 1px solid #041e42;
+   
 }
-
 svg:hover path{
     fill: #e8e8e8;
+    background-color: #041e42;
+   /* transition: fill 0.5s;....*/
     
     }
 
